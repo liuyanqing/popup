@@ -1,0 +1,51 @@
+.clearfix() {
+	*zoom: 1; // for ie6 ie7
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+.center-block() {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.opacity(@opacity) {
+	opacity: @opacity;
+	@opacity-ie: (@opacity * 100);
+	filter: ~"alpha(opacity=@{opacity-ie})";
+}
+.text-overflow(@width:0px) {
+	width:@width;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.placeholder(@color) {
+	&::-webkit-input-placeholder {
+		color: @color; // Chrome, Safari, Opera
+	}
+	&::-moz-placeholder {
+		color: @color; // Firefox 19+
+	}
+	&:-ms-input-placeholder {
+		color: @color; // IE 10+
+	}
+}
+
+.size(@width:auto,@height:@width) {
+	width: @width;
+	height: @height;
+}
+
+.inline-block(){
+	display:inline-block;
+	*display:inline; // ie6 ie7
+	*zoom:1;
+}
+
+

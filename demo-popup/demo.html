@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/popup.css">
+</head>
+<style type="text/css">
+	.code {
+
+	}
+	.popup-content {
+		width: 800px;
+		height: 500px;
+	}
+	.popup {
+		top: 100px;
+	}
+	.btn-grounp {
+		width: auto;
+		position: fixed;
+    	z-index: 111111;
+	}
+	.btn {
+		display: inline-block;
+	}
+</style>
+<body>
+	<div class="popup" data-popup="1">
+		<div class="popup-content">
+			<div class="popup-header">
+				<div class="popup-title separate">title</div>
+				<div class="popup-title">title</div>
+			</div>
+			<div class="popup-body">
+<xmp>
+<div class="popup" data-popup="1">
+	<div class="popup-content">
+		<div class="popup-header">
+			<div class="popup-title separate">title</div>
+			<div class="popup-title">title</div>
+		</div>
+		<div class="popup-body">
+		</div>
+		<div class="popup-footer">
+			<span class="btn popup-dismissed" data-target="1">关闭</span>
+		</div>
+	</div>
+</div>	
+</xmp>
+			</div>
+			<div class="popup-footer">
+				<span class="btn popup-dismissed" data-target="1">关闭</span>
+			</div>
+		</div>
+	</div>	
+	<div class="popupSide" data-popup="2">
+		<div class="popupSide-part">
+			<div class="title-box">
+				<div class="popupSide-title">翻译</div>
+				<hr>
+			</div>
+			<div class="popupSide-content">
+<xmp>
+<div class="popupSide" data-popup="2">
+	<div class="popupSide-part">
+		<div class="title-box">
+			<div class="popupSide-title">翻译</div>
+			<hr>
+		</div>
+		<div class="popupSide-content">
+			
+		</div>
+	</div>
+</div>
+</xmp>
+<div class="btn popup-dismissed" data-target="2">侧边栏关闭</div>
+			</div>
+		</div>
+	</div>
+<div class="btn-grounp">
+	<div class="code">
+	<p>要使用弹出框和侧边框时引入以下代码，放在lib.common.min.js引入之后：</p><xmp>
+	<script type="text/javascript" defer>
+		popup();
+	</script>
+</xmp>
+	</div>
+	<div class="btn popup-open" data-target="1">弹框出现</div>
+	<div class="btn popup-dismissed" data-target="1">弹框关闭</div>
+	<div class="btn popup-open" data-target="2">侧边栏出现</div>
+	<div class="btn popup-dismissed" data-target="2">侧边栏关闭</div>
+</div>
+<script type="text/javascript" src="/static/js/popup.js" defer></script>
+<script type="text/javascript" defer>
+	popup();
+</script>
+</body>
+</html>
