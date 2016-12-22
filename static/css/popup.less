@@ -24,72 +24,73 @@
 	    box-shadow: 0 1px 10px 0 @grey;
 	    border-radius: 3px;
 	    transition: 0.3s all ease-out;
-	    .popup-header {
-	    	line-height: 60px;
-	    	height: 60px;
-			border-bottom: 1px solid @greyLight;
-			padding: 0 10px;
-			.popup-title {
-				position: relative;
-				.inline-block;
-				font-size: 14px;
-				padding: 0 14px;
-				&.separate {
-					&::after {
-						position: absolute;
-					    top: 0;
-					    right: -2px;
-					    content: '|';
-					    color: @greyLight;
-					};
-				}
-			}
-	    }
-	    .popup-body {
-			overflow: hidden;
-		    position: absolute;
-		    top: 61px;
-		    bottom: 60px;
-		    left: 0;
-		    right: 0;
-	    }
-		.popup-footer {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			left: 0;
-			padding: 20px;
-			border-top: 1px solid @greyLight;
-			text-align: center;
+	}
+}
+.popup-header {
+	line-height: 60px;
+	height: 57px;
+	border-bottom: 1px solid @greyLight;
+	padding: 0 10px;
+	.popup-title {
+		position: relative;
+		.inline-block;
+		font-size: 14px;
+		padding: 0 14px;
+		color: #333;
+		&.popup-title-green{
+			color: #2b9a49;
 		}
+		&.separate {
+			&::after {
+				position: absolute;
+			    top: 0;
+			    right: -2px;
+			    content: '|';
+			    color: @greyLight;
+			};
+		}
+		&.cgreen {
+			color: @green;
+		}
+	}
+}
+.popup-body {
+	overflow: hidden;
+    position: absolute;
+    top: 58px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+.popup-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	left: 0;
+	padding: 20px;
+	border-top: 1px solid @greyLight;
+	text-align: center;
+	.btn {
+		margin-left: 40px;
 	}
 }
 
 .popupSide {
 	position: fixed;
 	right: 0;
-	top: 150px;
+	top: 175px;
 	bottom: 20px;
-	width: 280px;
+	width: 370px;
 	z-index: 111;
 	background: #fff;
-	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+	box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.15);
 	border-radius: 3px;
 	.popupSide-part {
-		margin: 20px;
+		margin: 35px 25px 40px;
 		overflow: auto;
 		.title-box {
 			position: relative;
-			.popupSide-title {
-				.inline-block;
-				width: auto;
-				border-left: 3px solid @green;
-				padding: 0 10px 0 5px;
-				background: #fff;
-				line-height: 15px;
-    			font-size: 15px;
-			}
 			hr {
 				.inline-block;
 				border-width: 0;
@@ -98,12 +99,20 @@
 				float: right;
 			}
 		}
-		.popupSide-content {
-
-		}
 	}
 }
-
+.popupSide-title {
+	.inline-block;
+	width: auto;
+	border-left: 2px solid @green;
+	padding: 0 10px;
+	background: #fff;
+	line-height: 15px;
+	font-size: 15px;
+}
+.popup-dismissed {
+	cursor: pointer;
+}
 .popup.hide, .popupSide.hide {
 	display: none;
 }
