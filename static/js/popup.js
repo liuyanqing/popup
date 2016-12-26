@@ -33,7 +33,6 @@ var popup = function(funOpen, funClose) {
         e.stopPropagation();
         e.preventDefault();
         classNa = tar.className.split(" ");
-        // tar.tagName.toLowerCase() !== "svg"?tar.className.split(" "):tar.className.animVal.split(" ");
         var popupList = document.getElementsByClassName("popup"),
             popupSideList = document.getElementsByClassName("popupSide"),
             list = [];
@@ -68,14 +67,6 @@ var popup = function(funOpen, funClose) {
 
     }
 };
-
-//2016年12月22日20:00:59临时加的下载文件
-//var download = function(){
-//	$(document).on('click','.download-way',function() {		
-//  	window.location.href="/static/img/aaaa.txt";
-//	});
-//}
-//window.download = download;
 
 window.popup = popup;
 
