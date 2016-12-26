@@ -68,6 +68,15 @@ var popup = function(funOpen, funClose) {
 
     }
 };
+
+//2016年12月22日20:00:59临时加的下载文件
+//var download = function(){
+//	$(document).on('click','.download-way',function() {		
+//  	window.location.href="/static/img/aaaa.txt";
+//	});
+//}
+//window.download = download;
+
 window.popup = popup;
 
 })(window);
