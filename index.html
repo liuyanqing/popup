@@ -91,9 +91,17 @@
 	<button type="button" class="btn popup-open" data-target="2">侧边栏出现</button>
 	<button type="button" class="btn popup-dismissed" data-target="2">侧边栏关闭</button>
 </div>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="/static/js/popup.js"></script>
 <script type="text/javascript" defer>
-	popup();
+	popup(
+		function(){
+			alert("open");
+		},
+		function(){
+			alert("close");
+		}
+	);
 </script>
 </body>
 </html>

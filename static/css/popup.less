@@ -2,7 +2,6 @@
 @greendark:#79C38D;
 @grey:#3a3a3a;
 @greyLight:#e0e0e0;
-@import url('./mixins');
 .popup {
 	position: fixed;
 	left: 0;
@@ -59,7 +58,7 @@
 	overflow: hidden;
     position: absolute;
     top: 58px;
-    bottom: 60px;
+    bottom: 70px;
     left: 0;
     right: 0;
 }
@@ -69,10 +68,12 @@
 	left: 0;
 	right: 0;
 	left: 0;
-	padding: 20px;
+	padding: 15px;
 	border-top: 1px solid @greyLight;
+	background: #fff;
 	text-align: center;
 	.btn {
+		.inline-block;
 		margin: 0 20px;
 	}
 }
